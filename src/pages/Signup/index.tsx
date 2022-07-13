@@ -92,7 +92,6 @@ const Users = () : JSX.Element => {
                 <option value="male" label="male">male</option>
                 <option value="female">female</option>
               </Select>
-
               <FormGroup
                 isValid={!(errors.status && touched.status)}
                 error={errors.status || ''}
@@ -115,7 +114,11 @@ const Users = () : JSX.Element => {
                   />
                 </Row>
               </FormGroup>
-              <Button type="submit" disabled={!isValid}>Create</Button>
+              <Row>
+                <Col>
+                  <Button className="mt-4" type="submit" disabled={!isValid}>Create</Button>
+                </Col>
+              </Row>
             </Form>
           )}
         </Formik>
