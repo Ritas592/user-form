@@ -5,6 +5,7 @@ import {
   Alert,
   Button, Col, Container, Row,
 } from 'react-bootstrap';
+
 import { searchUserById } from '../../api';
 import { UsersSearch } from '../../types';
 import ButtonLink from '../../components/ButtonLink';
