@@ -8,11 +8,11 @@ import { useNavigate } from 'react-router-dom';
 
 import { UsersData, UsersSearch } from '../../types';
 import { createUsers } from '../../api';
-import TextInput from '../../component/Form/TextInput';
-import Select from '../../component/Form/Select';
-import FormGroup from '../../component/Form/FormGroup';
-import RadioButton from '../../component/RadioButton';
-import ButtonLink from '../../component/ButtonLink';
+import TextInput from '../../components/Form/TextInput';
+import Select from '../../components/Form/Select';
+import FormGroup from '../../components/Form/FormGroup';
+import RadioButton from '../../components/RadioButton';
+import ButtonLink from '../../components/ButtonLink';
 import { populateList } from '../../utils';
 
 const validationSchema = Yup.object().shape({

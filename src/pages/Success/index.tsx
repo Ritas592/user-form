@@ -5,7 +5,7 @@ import {
   Button, Col, Container, ListGroup, Row,
 } from 'react-bootstrap';
 
-import ButtonLink from '../../component/ButtonLink';
+import ButtonLink from '../../components/ButtonLink';
 import { UsersSearch } from '../../types';
 import { populateList } from '../../utils';
 

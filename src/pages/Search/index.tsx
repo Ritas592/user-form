@@ -7,7 +7,7 @@ import {
 } from 'react-bootstrap';
 import { searchUserById } from '../../api';
 import { UsersSearch } from '../../types';
-import ButtonLink from '../../component/ButtonLink';
+import ButtonLink from '../../components/ButtonLink';
 
 const validationSchema = Yup.object().shape({
   id: Yup.string().required('ID is required'),
