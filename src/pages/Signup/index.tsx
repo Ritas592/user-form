@@ -79,47 +79,42 @@ const Users = () : JSX.Element => {
                 error={errors.email || ''}
                 validate={validationEmail}
               />
-              <Row>
-                <Col xs={12} className="mx-auto">
-                  <Select
-                    className="form-control w-100 mt-4"
-                    name="gender"
-                    as="select"
-                    isValid={!(errors.gender && touched.gender)}
-                    error={errors.gender || ''}
-                  >
-                    <option label="Select gender">
-                      Select a gender
-                    </option>
-                    <option value="male" label="male">male</option>
-                    <option value="female">female</option>
-                  </Select>
-                </Col>
-              </Row>
-              <Row className="pt-4">
-                <FormGroup
-                  isValid={!(errors.status && touched.status)}
-                  error={errors.status || ''}
-                >
-                  <Row>
-                    <Col className="d-flex justify-content-start" xs={4}>
-                      <b className="mr-auto">Status:</b>
-                    </Col>
-                    <RadioButton
-                      type="radio"
-                      name="status"
-                      value="active"
-                      text="active"
-                    />
-                    <RadioButton
-                      type="radio"
-                      name="status"
-                      value="inactive"
-                      text="inactive"
-                    />
-                  </Row>
-                </FormGroup>
-              </Row>
+              <Select
+                className="form-control w-100 mt-4"
+                name="gender"
+                as="select"
+                isValid={!(errors.gender && touched.gender)}
+                error={errors.gender || ''}
+              >
+                <option label="Select gender">
+                  Select a gender
+                </option>
+                <option value="male" label="male">male</option>
+                <option value="female">female</option>
+              </Select>
+
+              <FormGroup
+                isValid={!(errors.status && touched.status)}
+                error={errors.status || ''}
+              >
+                <Row>
+                  <Col className="d-flex justify-content-start" xs={4}>
+                    <b className="mr-auto">Status:</b>
+                  </Col>
+                  <RadioButton
+                    type="radio"
+                    name="status"
+                    value="active"
+                    text="active"
+                  />
+                  <RadioButton
+                    type="radio"
+                    name="status"
+                    value="inactive"
+                    text="inactive"
+                  />
+                </Row>
+              </FormGroup>
               <Button type="submit" disabled={!isValid}>Create</Button>
             </Form>
           )}
